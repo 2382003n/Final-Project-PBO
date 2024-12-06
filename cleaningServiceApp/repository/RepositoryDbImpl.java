@@ -27,7 +27,7 @@ public class RepositoryDbImpl implements Repository {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sqlStatement);
             preparedStatement.setString(1, customer.getName());
-            preparedStatement.setString(2, customer.getAddress());
+            preparedStatement.setString(2, customer.getAddreas());
             preparedStatement.setString(3, customer.getPhone());
 
 
